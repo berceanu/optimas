@@ -121,7 +121,7 @@ def execute_and_analyze_simulation(
         num_gpus=num_gpus,
         env_script=env_script,
         mpi_runner_type=mpi_runner_type,
-        extra_args="--mem=100G",
+        extra_args="--mem=80G",
     )
 
     calc_status = Executor.executor.polling_loop(task, timeout=timeout)
